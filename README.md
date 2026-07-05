@@ -12,7 +12,8 @@ CRM System          ERP System
      │                   │
      ▼                   ▼
 ┌─────────────────────────────┐
-│         BRONZE LAYER        │  Raw ingestion, no transformation
+│         BRONZE LAYER        │   Raw ingestion, no transformation
+│                             │
 │  crm_cust_info              │
 │  crm_prd_info               │
 │  crm_sales_details          │
@@ -20,10 +21,12 @@ CRM System          ERP System
 │  erp_loc_a101               │
 │  erp_px_cat_g1v2            │
 └────────────┬────────────────┘
+             │
              │ EXEC bronze.load_bronze
              ▼
 ┌─────────────────────────────┐
-│         SILVER LAYER        │  Cleaned, standardized, deduplicated
+│         SILVER LAYER        │   Cleaned, standardized, deduplicated
+│                             │
 │  crm_cust_info              │
 │  crm_prd_info               │
 │  crm_sales_details          │
@@ -31,11 +34,15 @@ CRM System          ERP System
 │  erp_loc_a101               │
 │  erp_px_cat_g1v2            │
 └────────────┬────────────────┘
+             │
              │ EXEC silver.load_silver
              ▼
 ┌─────────────────────────────┐
-│          GOLD LAYER         │  Business-ready views & aggregates
-│  (in progress)              │
+│          GOLD LAYER         │   Business-ready Star Schema
+│                             │
+│  dim_customers              │
+│  dim_products               │
+│  fact_sales                 │
 └─────────────────────────────┘
 ```
 
