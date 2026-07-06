@@ -1,5 +1,37 @@
 # SQL Data Warehouse Project
 
+This project builds a modern **SQL Server Data Warehouse** by combining CRM and ERP data into one trusted data source.
+
+The project uses the **Medallion Architecture (Bronze → Silver → Gold)** to load, clean, and prepare data for reporting. The final result is a **Single Source of Truth** that can be used by Business Intelligence tools such as Power BI and Tableau.
+
+---
+
+##  Business Context
+
+Many companies store customer, product, and sales data in different systems.
+
+This can cause several problems:
+
+- ❌ Inconsistent reports
+- ❌ Manual data preparation
+- ❌ Poor data quality
+- ❌ Different numbers across departments
+- ❌ Slow reporting process
+
+This project helps solve these problems by creating one central data warehouse.
+
+---
+
+##  Business Goal
+
+The main goals of this project are:
+
+- Combine CRM and ERP data into one central database
+- Improve data quality
+- Build a repeatable ETL process
+- Provide trusted data for BI tools
+- Make reporting and dashboard creation easier
+
 A fully functional data warehouse built with **SQL Server**, implementing the **Medallion Architecture** (Bronze → Silver → Gold) to consolidate, clean, and serve data from two source systems: a CRM platform and an ERP system.
 
 ---
