@@ -91,13 +91,13 @@ CRM System          ERP System
 ```
 ---
 
-#  ETL Pipeline Overview
+##  ETL Pipeline Overview
 
 The process starts by loading raw CRM and ERP data into the Bronze layer. The data is then cleaned and standardized in the Silver layer before being transformed into a business-ready **Star Schema** in the Gold layer.
 
 ---
 
-#  Bronze Layer — Raw Data
+##  Bronze Layer — Raw Data
 
 The Bronze layer is the landing area for all source data. Data is loaded exactly as it comes from the CRM and ERP systems without any transformations.
 
@@ -113,7 +113,7 @@ At this stage, the goal is simply to move the data into the warehouse while keep
 
 ---
 
-#  Silver Layer — Data Cleaning & Transformation
+##  Silver Layer — Data Cleaning & Transformation
 
 The Silver layer focuses on improving data quality. Here, raw data is cleaned, standardized, and prepared for business use.
 
@@ -144,7 +144,7 @@ This column stores the timestamp when the record was loaded into the data wareho
 
 ---
 
-#  Gold Layer — Business-Ready Model
+##  Gold Layer — Business-Ready Model
 
 The Gold layer contains the final business model used for reporting and analytics.
 
@@ -175,7 +175,7 @@ Instead of creating physical tables, this layer uses SQL **Views** built on top 
 
 ---
 
-# 🔗 Business Rules
+#  Business Rules
 
 A few business rules were applied while building the Gold layer.
 
@@ -188,7 +188,7 @@ A few business rules were applied while building the Gold layer.
 
 ---
 
-# ✅ Data Quality Checks
+#  Data Quality Checks
 
 Several validation checks were performed to make sure the data is reliable.
 
@@ -205,7 +205,7 @@ The checks include:
 
 ---
 
-# 📊 Final Output
+#  Final Output
 
 The completed Gold layer can be used for:
 
