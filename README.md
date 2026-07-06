@@ -91,19 +91,6 @@ CRM System          ERP System
 ```
 ---
 
-## Data Sources
-
-| Source | Table | Description |
-|--------|-------|-------------|
-| CRM | `crm_cust_info` | Customer master records |
-| CRM | `crm_prd_info` | Product catalog with versioning |
-| CRM | `crm_sales_details` | Transactional sales orders |
-| ERP | `erp_cust_az12` | Customer demographics (birthdate, gender) |
-| ERP | `erp_loc_a101` | Customer location data |
-| ERP | `erp_px_cat_g1v2` | Product category hierarchy |
-
----
-
 #  ETL Pipeline Overview
 
 The process starts by loading raw CRM and ERP data into the Bronze layer. The data is then cleaned and standardized in the Silver layer before being transformed into a business-ready **Star Schema** in the Gold layer.
