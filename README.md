@@ -45,13 +45,7 @@ The main goals of this project are:
 | ERP | `erp_loc_a101` | Customer location data |
 | ERP | `erp_px_cat_g1v2` | Product category hierarchy |
 ## Architecture Overview
-
 ---
-The project follows the Medallion Architecture, where data moves through three layers:
-
-- Bronze – Raw data
-- Silver – Clean and standardized data
-- Gold – Business-ready Star Schema
 
 ```
 CRM System          ERP System
